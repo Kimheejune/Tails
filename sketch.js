@@ -9,5 +9,6 @@ ellipse(400, 300, 100, 100);
 function draw()
 {
 	 background(0);
-	 ellipse(400, 300, mouseX, mouseY);
+	// ellipse(400, 300, mouseX, mouseY);
+	ellipse(mouseX, mouseY, 100, 100)
 }
