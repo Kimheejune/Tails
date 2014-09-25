@@ -1,3 +1,6 @@
+var trailX = 0;
+var trailY = 0;
+
 function setup() 
 {
 createCanvas(800, 600);
@@ -9,6 +12,12 @@ ellipse(400, 300, 100, 100);
 function draw()
 {
 	 background(0);
-	// ellipse(400, 300, mouseX, mouseY);
-	ellipse(mouseX, mouseY, 100, 100)
+	// mouse ellipse
+	ellipse(mouseX, mouseY, 100, 100);
+
+	//trail ellipse
+	trailX = (mouseX + trailX * 9) / 10;
+    trailY = (mouseY + trailY * 9) / 10;
+	ellipse(trailX, trailY, 80, 80 );
+
 }
